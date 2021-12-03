@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./src/styles.css" />
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <title>Weather App</title>
+</head>
+
+<body>
+  <div class=".container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Weather App</a>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">Sydney</a>
+          <a class="nav-item nav-link" href="#">Auckland</a>
+          <a class="nav-item nav-link" href="#">Manilla</a>
+          <a class="nav-item nav-link" href="#">Perth</a>
+        </div>
+      </div>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search Location" aria-label="Search"
+          id="search-input" />
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          Search Location
+        </button>
+        <button class="btn btn-outline-success my-2 my-sm-0 current-location">
+          Current Location
+        </button>
+      </form>
+    </nav>
+    <div class="today">
+      <h1 class="location">Sydney</h1>
+      <h2 class="dateTime">Monday, 10 August</h2>
+      <img src="./images/heweather-icon-sun.png" alt="" />
+      <div>
+        <span class="temp">
+          20
+        </span>
+      </div>
+      <p class="condition">Partly Cloudy</p>
+    </div>
+    <div class="row card-container">
+      <div class="card col-1">
+        <img src="./images/heweather-icon-sunny-partial-cloud.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Tues</h5>
+          <p class="card-text high">28</p>
+          <p class="card-text low">15</p>
+        </div>
+      </div>
+      <div class="card col-1">
+        <img src="./images/heweather-icon-cloudy.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Wed</h5>
+          <p class="card-text high">22</p>
+          <p class="card-text low">10</p>
+        </div>
+      </div>
+      <div class="card col-1">
+        <img src="./images/heweather-icon-heavy-rain.png" class="card-img-top" alt="heweather-icon-heavy-rain" />
+        <div class="card-body">
+          <h5 class="card-title">Thur</h5>
+          <p class="card-text high">18</p>
+          <p class="card-text low">9</p>
+        </div>
+      </div>
+      <div class="card col-1">
+        <img src="./images/heweather-icon-storm-light-rain.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Fri</h5>
+          <p class="card-text high">19</p>
+          <p class="card-text low">10</p>
+        </div>
+      </div>
+      <div class="card col-1">
+        <img src="./images/heweather-icon-sun-heavy-rain.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Sat</h5>
+          <p class="card-text high">22</p>
+          <p class="card-text low">12</p>
+        </div>
+      </div>
+      <div class="card col-1">
+        <img src="./images/heweather-icon-sun-cloudy.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Sun</h5>
+          <p class="card-text high">24</p>
+          <p class="card-text low">16</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="src/index.js"></script>
+</body>
+
+</html>
